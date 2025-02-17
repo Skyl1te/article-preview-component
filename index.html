@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Article preview component</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-light-grayish-blue p-5 grid place-content-center">
+  <main class="bg-white max-w-[325px] lg:max-w-[760px] rounded-xl overflow-hidden lg:overflow-visible lg:h-[290px]">
+    <figure class="w-full grid grid-col gap-8 grid-cols-1 lg:grid-cols-2 ">
+      <img src="images/drawers.jpg" alt="Drawers" class="lg:col-span-1">
+      <figcaption class="lg:flex lg:flex-col lg:justify-center lg:py-6">
+        <h1 class="text-very-dark-grayish-blue font-bold text-base px-6 lg:text-lg">
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h1>
+        <p class="text-grayish-blue font-normal text-sm mt-4 px-6 lg:text-xs">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.        
+        </p>
+
+        <div class="lg:relative">
+          <figure id="person" class="footer p-6 lg:p-0 lg:px-6">
+            <div class="flex">
+              <img src="images/avatar-michelle.jpg" alt="Michelle"
+              class="w-10 h-full rounded-full">
+              <figcaption class="text-xs self-center ml-4">
+                <span class="font-bold text-very-dark-grayish-blue">Michelle Appleton</span> <br>
+                <time datetime="28-06-2020" class="text-grayish-blue">28 Jun 2020</time>
+              </figcaption>
+            </div>
+            <button class="share-btn bg-light-grayish-blue">
+              <img src="images/icon-share.svg" alt="Share" id="personShareBtn">
+            </button>
+          </figure>
+          <figure id="social-medias" class="footer  bg-very-dark-grayish-blue  
+          lg:absolute lg:left-[12rem] lg:bottom-12 lg:w-[270px] lg:rounded-2xl lg:p-4 lg:justify-evenly hidden p-6">
+            <figcaption class="text-grayish-blue uppercase text-sm tracking-[.5rem]">
+              Share
+            </figcaption>
+            <div class="flex gap-4 ml-4">
+              <a href="https://www.facebook.com/" target="_blank"><img class="w-5 h-5" src="images/icon-facebook.svg" alt="Facebook"></a>
+              <a href="https://x.com/" target="_blank"><img class="w-5 h-5" src="images/icon-twitter.svg" alt="Twitter"></a>
+              <a href="https://ru.pinterest.com/" target="_blank"><img class="w-5 h-5" src="images/icon-pinterest.svg" alt="Pinterest"></a>
+            </div>
+            <button class="share-btn bg-desaturated-dark-blue ml-4 lg:hidden" id="socialMediasShareBtn">
+              <img src="images/icon-share.svg" alt="Share" style="filter: brightness(5);">
+            </button>      
+          </figure>
+        </div>
+    
+      </figcaption>
+      
+    </figure>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Skyl1te">@Skyl1te</a>.
+  </div>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
