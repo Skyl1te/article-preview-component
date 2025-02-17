@@ -801,6 +801,10 @@ body {
     height: 290px;
   }
 
+  .lg\:h-\[100vh\] {
+    height: 100vh;
+  }
+
   .lg\:w-\[270px\] {
     width: 270px;
   }
